@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 public class Pessoa {
 	
 	@Id
-	@Column(name = "id_pessoa")
+	@Column(name = "id_pessoa", nullable = false)
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id_pessoa;
 	@Column(name = "nome")
@@ -97,5 +97,6 @@ public class Pessoa {
 		this.cidade = cidade;
 	}
 
+	
 	
 }
